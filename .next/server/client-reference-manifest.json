@@ -56,17 +56,25 @@
         "async": false
       }
     },
-    "(app-client)/./app/providers.tsx": {
+    "(app-client)/./app/page.tsx": {
       "*": {
-        "id": "(sc_client)/./app/providers.tsx",
+        "id": "(sc_client)/./app/page.tsx",
         "name": "*",
         "chunks": [],
         "async": false
       }
     },
-    "(app-client)/./app/page.tsx": {
+    "(app-client)/./app/layout.tsx": {
       "*": {
-        "id": "(sc_client)/./app/page.tsx",
+        "id": "(sc_client)/./app/layout.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/providers.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/providers.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -235,14 +243,6 @@
       ],
       "async": false
     },
-    "C:\\Users\\hornf\\Programming\\fpa-nextjs-template\\app\\providers.tsx": {
-      "id": "(app-client)/./app/providers.tsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
     "C:\\Users\\hornf\\Programming\\fpa-nextjs-template\\app\\page.tsx": {
       "id": "(app-client)/./app/page.tsx",
       "name": "*",
@@ -250,14 +250,30 @@
         "app/page:static/chunks/app/page.js"
       ],
       "async": false
+    },
+    "C:\\Users\\hornf\\Programming\\fpa-nextjs-template\\app\\layout.tsx": {
+      "id": "(app-client)/./app/layout.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\hornf\\Programming\\fpa-nextjs-template\\app\\providers.tsx": {
+      "id": "(app-client)/./app/providers.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
     }
   },
   "entryCSSFiles": {
-    "C:\\Users\\hornf\\Programming\\fpa-nextjs-template\\app\\layout": {
+    "C:\\Users\\hornf\\Programming\\fpa-nextjs-template\\app\\page": {
       "modules": [],
       "files": []
     },
-    "C:\\Users\\hornf\\Programming\\fpa-nextjs-template\\app\\page": {
+    "C:\\Users\\hornf\\Programming\\fpa-nextjs-template\\app\\layout": {
       "modules": [],
       "files": []
     }
