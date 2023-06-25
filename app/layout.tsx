@@ -1,6 +1,7 @@
 "use client";
 import { Providers } from "./providers";
 import Header from "./components/organisms/Header";
+import Footer from "./components/organisms/Footer";
 
 export default function RootLayout({
   children,
@@ -14,6 +15,7 @@ export default function RootLayout({
         <Header /> 
           {children}
         </Providers>
+        <Footer /> 
       </body>
     </html>
   );
