@@ -1,27 +1,39 @@
-
-import { Box, Flex, Text, Spacer } from '@chakra-ui/react';
+// components/Header.js
+import { Box, Flex, IconButton, Spacer, useDisclosure } from '@chakra-ui/react';
+import { HamburgerIcon, SearchIcon } from '@chakra-ui/icons';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Header = () => {
+  const { isOpen, onToggle } = useDisclosure();
+
   return (
-    <Box>
-
-      <Box as="header" w="100%" p={4} bgColor="#005AAB">
-        <Text fontSize="xl" color="white">
-          Haier
-        </Text>
-      </Box>
-      <Box as="header" w="100%" p={4} bgColor="#FFFFFF">
-        <Flex>
-          <Spacer></Spacer>
-          <Box>Single Room</Box>
-          <Box>Multi Room</Box>
-          <Box>Whole Home</Box>
-          <Box>More</Box>
-          <Spacer></Spacer>
-        </Flex>
-      </Box>
+    <Box as="header" bg="#005AAB">
+      <Flex w="100%" p={4} align="center">
+        <IconButton
+          aria-label="Menu"
+          icon={<HamburgerIcon boxSize="24px" color="white" />}
+          onClick={onToggle}
+          variant="outline"
+          bg="transparent"
+          _hover={{ bg: 'transparent' }}
+          border="none"
+          marginRight={2}
+        />
+        <Link href="/" title="Your Website">
+          <Image src="/Logo.svg" alt="Logo" width={65} height={20} />
+        </Link>
+        <Spacer />
+        <IconButton
+          aria-label="Search"
+          icon={<SearchIcon boxSize="24px" color="white" />}
+          variant="outline"
+          bg="transparent"
+          _hover={{ bg: 'transparent' }}
+          border="none"
+        />
+      </Flex>
     </Box>
-
   );
 };
 
