@@ -8,7 +8,7 @@ const Homepage = () => {
         <div>
 
 <Hero
-          src="/haier-aa-home-refrigeration-1200.jpg"
+          src="/haierhomehero.png"
           alt="Hero image"
           title="SMART HOME COMFORT"
           description="Home heating and cooling that is efficient, climate friendly and connected."
