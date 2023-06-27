@@ -1,5 +1,5 @@
 
-import Homepagehero from "../molecules/Homepagehero";
+import Hero from "../molecules/Hero";
 
 
 
@@ -7,7 +7,13 @@ const Homepage = () => {
     return (
         <div>
 
-            <Homepagehero /> 
+<Hero
+          src="/haier-aa-home-refrigeration-1200.jpg"
+          alt="Hero image"
+          title="SMART HOME COMFORT"
+          description="Home heating and cooling that is efficient, climate friendly and connected."
+          buttonText="Get a quote"
+        /> 
 
         </div>
 
