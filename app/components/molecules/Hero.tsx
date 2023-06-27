@@ -35,9 +35,9 @@ const Hero = ({ src, alt, title, description, buttonText }) => {
       >
         <Text fontWeight="bold">{title}</Text>
         <Text>{description}</Text>
-        <Button colorScheme="blue" variant="outline" bg="white" mt={4}>
-          {buttonText}
-        </Button>
+        <Button colorScheme="blue" variant="outline" bg="white" color="blue.500" mt={4}>
+  {buttonText}
+</Button>
       </Flex>
     </Box>
   );
