@@ -1,5 +1,5 @@
 NextJS + Chakra UI
 
-Step 1 npm install
+Step 1 npm installl
 
 Step 2 npm run dev
