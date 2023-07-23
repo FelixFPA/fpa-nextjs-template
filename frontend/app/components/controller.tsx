@@ -1,4 +1,11 @@
-async function getData() {
+
+
+const Controller = () => {
+  return (
+     <div>{getData()}</div>
+    );
+  };
+  async function getData() {
     const res = await fetch('http://localhost:1337/api/homepage' )
   
 
@@ -9,4 +16,4 @@ async function getData() {
    
     return res.json()
   }
-console.log(getData())
+export default Controller;
