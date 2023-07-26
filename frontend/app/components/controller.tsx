@@ -1,5 +1,3 @@
-
-
 const Controller = () => {
   return (
      <div>{getData()}</div>

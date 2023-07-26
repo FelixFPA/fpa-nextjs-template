@@ -1,12 +1,11 @@
 
 import Hero from "../molecules/Hero";
-import Controller from "../Controller";
+//import Controller from "../Controller";
 
   
 const Homepage = () => {
     return (
         <div>
-        <Controller></Controller>
  <Hero
           src="/haierhomehero.png"
           alt="Hero image"
