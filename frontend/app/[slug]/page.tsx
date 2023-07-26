@@ -1,8 +1,27 @@
-export default function Page({ params }: { params: { slug: string } }) {
-    return <div>My Post: {params.slug}</div>
+const url = "https://nextjs-starter-buttercms.vercel.app/_next/data/dpUC1B3VFo11UwevoPv4a/blog/third-sample-post-with-featured.json?slug=third-sample-post-with-featured"
+
+
+//export default function Page({ params }: { params: { slug: string } }) {
+//    return <div>My Post: {params.slug}</div>
+//  }
+
+
+// Return a list of `params` to populate the [slug] dynamic segment
+export async function generateStaticParams() {
+    const posts = await fetch(url).then((res) => res.json())
+   
+    return posts.map((post) => ({
+      slug: post.slug,
+    }))
   }
-  
-  const url = "https://nextjs-starter-buttercms.vercel.app/_next/data/dpUC1B3VFo11UwevoPv4a/blog/third-sample-post-with-featured.json?slug=third-sample-post-with-featured"
+   
+  // Multiple versions of this page will be statically generated
+  // using the `params` returned by `generateStaticParams`
+  export default function Page({ params }) {
+    const { slug } = params
+    // ...
+  }
+
   // jsonobj.post.slug 
   // 
 
